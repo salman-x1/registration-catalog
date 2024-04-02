@@ -1,0 +1,203 @@
+body {
+  background: #ececec;
+}
+.login-ctn,
+.signup-ctn {
+  border: 1px solid rgb(236, 236, 236);
+  padding: 20px;
+  border-radius: 20px;
+  width: 600px;
+  height: auto;
+  margin: 60px auto;
+  background-color: #c3cecc9c;
+}
+.head-ctn {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+  color: #414141;
+  font-size: 18px;
+  margin: auto;
+  width: 280px;
+}
+.login-ctn form {
+  /* border: 1px solid red; */
+  margin: 20px;
+  padding: 10px;
+}
+.login-ctn,
+.signup-ctn label {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.username-ctn,
+.email-ctn,
+.password-ctn {
+  /* border: 1px solid red; */
+  padding: 10px;
+
+  width: 350px;
+  margin: auto;
+}
+
+/* .name-ctn,
+.age-ctn,
+.address-ctn,
+.email-ctn {
+  border: 1px solid red;
+  width: 350px;
+  height: 100px;
+} */
+
+.signup-ctn input {
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  /* margin-left: 40px; */
+  border: none;
+  width: 300px;
+  padding-left: 12px;
+  height: 34px;
+}
+.login-ctn input {
+  border-radius: 10px;
+  /* margin-left: 40px; */
+  border: none;
+  width: 300px;
+  padding-left: 12px;
+  height: 34px;
+}
+.btn-ctn {
+  margin: auto;
+  width: 120px;
+}
+.result-ctn {
+  width: 200px;
+  margin: auto;
+}
+.container {
+  width: 400px;
+  height: 500px;
+  border: 1px solid red;
+  padding: 20px;
+  content: fit content;
+}
+
+/* Data HTML */
+
+.data {
+  display: grid;
+  margin: auto;
+  width: 800px;
+  height: 300px;
+
+  grid-template-rows: 10% 10%;
+  grid-template-columns: 50% 50%;
+  padding: 20px;
+  gap: 40px;
+}
+
+.data div {
+  width: 70%;
+  height: 50vh;
+  /* margin-top: 40px; */
+  row-gap: 4px;
+}
+
+span {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input {
+  /* width: 300px;
+  height: 30px; */
+  border-radius: 10px;
+  border: none;
+  gap: 20px;
+}
+.data span {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.data input {
+  width: 300px;
+  height: 30px;
+}
+.data-btn-ctn {
+  align-items: center;
+  justify-content: center;
+  /* width: 100px; */
+  border: 1px solid red;
+}
+table,
+th,
+td {
+  border: solid 0.1em rgb(160, 156, 156);
+  white-space: nowrap;
+}
+
+table {
+  border: 1px solid red;
+  width: 700px;
+  margin: auto;
+  border-collapse: collapse;
+  /* margin-left: 260px; */
+}
+tbody {
+  border: 1px;
+}
+
+/* <!-- HTML !--> */
+/* <button class="button-6" role="button">Button 6</button> */
+
+/* CSS */
+.button-6 {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}

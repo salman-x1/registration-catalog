@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="signup-ctn">
+      <form>
+        <div class="head-ctn">
+          <h2>Welcome to Sign Up</h2>
+        </div>
+        <div class="username-ctn">
+          <label for="">Username</label>
+          <br />
+          <input type="text" id="name" />
+        </div>
+
+        <br />
+        <div class="email-ctn">
+          <label for="">Email</label>
+          <br />
+          <input type="email" id="email" />
+        </div>
+        <br />
+        <div class="username-ctn">
+          <label for="number">Age</label>
+          <br />
+          <input type="text" id="age" />
+        </div>
+        <div class="username-ctn">
+          <label for="">Address</label>
+          <br />
+          <input type="text" id="address" />
+        </div>
+
+        <br />
+        <div class="btn-ctn">
+          <button type="submit" onclick="addData()" class="button-6">
+            Add Data
+          </button>
+          <button type="submit" onclick="addData()" class="button-6">
+            Edit Data
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- Table -->
+    <div>
+      <table id="table-data">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
