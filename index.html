@@ -3,41 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign Up - Data Table</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
+    <!-- Sign Up Container -->
     <div class="signup-ctn">
-      <form onsubmit="signup()">
-        <div class="head-ctn">
-          <h2>Welcome to Sign Up</h2>
+      <form onsubmit="Auth.signup(event)" id="signupForm">
+        <div class="head-signup-ctn">
+          <h2>Sign Up</h2>
+          <p>Create your account within seconds</p>
         </div>
         <div class="username-ctn">
-          <label for="">Username</label>
-          <br />
-          <input type="text" id="username" />
+          <input type="text" id="username" placeholder="Username" required />
         </div>
 
         <br />
         <div class="email-ctn">
-          <label for="">Email</label>
-          <br />
-          <input type="email" id="email" />
+          <input type="email" id="email" placeholder="Email Address" required />
         </div>
         <br />
         <div class="password-ctn">
-          <label for="">Password</label>
-          <br />
-          <input type="password" id="password" />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
         </div>
-
         <br />
         <div class="btn-ctn">
           <button type="submit" class="button-6">Sign Up</button>
         </div>
+        <div class="route-page-ctn">
+          <p>Already have an account?</p>
+          <a href="login.html">Login</a>
+        </div>
       </form>
     </div>
   </body>
-  <script src="/index.js"></script>
+  <script src="login.js"></script>
 </html>

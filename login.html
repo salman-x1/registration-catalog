@@ -3,38 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login - Data Table</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <div class="login-ctn">
-      <form onsubmit="login()">
-        <div class="head-ctn">
-          <h2>Login to Your Account</h2>
+      <form onsubmit="Auth.login(event)">
+        <div class="head-login-ctn">
+          <h2>Login</h2>
+          <p>Enter your login detail please</p>
         </div>
         <div class="username-ctn">
-          <label for="">Username</label>
-          <br />
-          <input type="text" id="username" />
+          <input type="text" id="username" placeholder="Username" required />
         </div>
         <br />
         <div class="password-ctn">
-          <label for="">Password</label>
-          <br />
-          <input type="password" id="password" />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
         </div>
 
         <br /><br />
         <div class="btn-ctn">
           <button class="button-6">Log In</button>
         </div>
+        <div class="route-page-ctn">
+          <p>Don't have an account?</p>
+          <a href="index.html">Sign Up</a>
+        </div>
         <div class="result-ctn">
-          <p id="result">Welcome to Login Page</p>
+          <p id="result"></p>
         </div>
       </form>
     </div>
 
-    <script src="index.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>

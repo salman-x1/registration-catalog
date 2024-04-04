@@ -3,47 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Welcome to Data Table Page</title>
+    <link rel="stylesheet" href="table.css" />
   </head>
 
   <body>
     <div class="signup-ctn">
       <form>
         <div class="head-ctn">
-          <h2>Welcome to Sign Up</h2>
+          <h2>Add Data to the Table</h2>
         </div>
-        <div class="username-ctn">
-          <label for="">Username</label>
-          <br />
-          <input type="text" id="name" />
+        <div class="form-data-ctn">
+          <div class="name-ctn">
+            <label for="name">Name</label>
+            <br />
+            <input
+              type="text"
+              id="name"
+              placeholder="Full Name"
+              required
+              autocomplete="on"
+            />
+          </div>
+
+          <div class="email-ctn">
+            <label for="email">Email</label>
+            <br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              autocomplete="on"
+            />
+          </div>
+
+          <div class="age-ctn">
+            <label for="age">Age</label>
+            <br />
+            <input
+              type="number"
+              id="age"
+              placeholder="You Age eg., 22"
+              autocomplete="on"
+            />
+          </div>
+          <div class="address-ctn">
+            <label for="address">Address</label>
+            <br />
+            <input
+              type="text"
+              id="address"
+              placeholder="Home Address"
+              autocomplete="on"
+            />
+          </div>
         </div>
 
-        <br />
-        <div class="email-ctn">
-          <label for="">Email</label>
-          <br />
-          <input type="email" id="email" />
-        </div>
-        <br />
-        <div class="username-ctn">
-          <label for="number">Age</label>
-          <br />
-          <input type="text" id="age" />
-        </div>
-        <div class="username-ctn">
-          <label for="">Address</label>
-          <br />
-          <input type="text" id="address" />
-        </div>
-
-        <br />
         <div class="btn-ctn">
-          <button type="submit" onclick="addData()" class="button-6">
+          <button
+            type="submit"
+            id="Submit"
+            onclick="CrudOperation.addData()"
+            class="button-6"
+          >
             Add Data
           </button>
-          <button type="submit" onclick="addData()" class="button-6">
-            Edit Data
+          <button
+            type="submit"
+            id="Update"
+            onclick="CrudOperation.updateData()"
+            class="button-6"
+          >
+            Update Data
           </button>
         </div>
       </form>
@@ -64,5 +95,6 @@
       </table>
     </div>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>
